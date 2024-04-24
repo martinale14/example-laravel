@@ -28,7 +28,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return response()->json(["jwt" => $request->all()["body"]]);
+        return response()->json($request->all());
     }
 
     /**
