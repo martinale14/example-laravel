@@ -28,7 +28,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return response()->json($request->all());
+        return response($request->all()["body"]);
     }
 
     /**
